@@ -58,6 +58,24 @@ The template uses mail-merge-style `«Placeholder»` tokens that map to Excel co
 
 ## Usage
 
+### 1. Upload input files
+
+The Excel data file and Word template are **not** included in the repository. You need to upload them into the project root before running the script:
+
+| File to upload | Description |
+|---|---|
+| `Cleaned EOIs.xlsx` | Excel workbook with source data |
+| `Round 1 and Data.docx` | Word template containing `«Placeholder»` tokens |
+
+**In GitHub Codespaces**, you can upload files by dragging them into the Explorer sidebar, or by using the terminal:
+
+```bash
+# From the terminal inside Codespaces, you can also use the GUI:
+# Right-click the file explorer → Upload...
+```
+
+### 2. Run the script
+
 ```bash
 # Inspect Excel columns and template placeholders (no files generated)
 python generate_documents.py --inspect
@@ -75,10 +93,14 @@ python generate_documents.py --pdf
 python generate_documents.py --pdf-only
 ```
 
-## Output
+### 3. Download the output
 
-- **`output/`** -- generated `.docx` files, one per spreadsheet row.
-- **`output_pdf/`** -- converted PDF files (when using `--pdf` or `--pdf-only`).
+Generated files are saved to `output/` (`.docx`) and `output_pdf/` (`.pdf`).
+
+**In GitHub Codespaces**, download the results by:
+
+- Right-clicking the `output/` or `output_pdf/` folder in the Explorer sidebar and selecting **Download...**.
+- Or downloading individual files by right-clicking them and selecting **Download...**.
 
 Each output file is named as `[PI Name] [Nominee Name] [Nomination Type].docx`. Accented characters are transliterated to ASCII for filename safety.
 
