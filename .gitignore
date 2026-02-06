@@ -3,3 +3,5 @@ output_pdf/
 *.docx
 *.pdf
 *.xlsx
+.DS_Store
+.vscode
