@@ -1,0 +1,5 @@
+output/
+output_pdf/
+*.docx
+*.pdf
+*.xlsx
