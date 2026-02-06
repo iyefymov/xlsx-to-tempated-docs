@@ -32,8 +32,8 @@ Place the following files in the project root (they are git-ignored):
 
 | File | Description |
 |---|---|
-| `Cleaned EOIs.xlsx` | Excel workbook with source data (reads from the **"2. Filtered-Complete EOIs"** sheet) |
-| `Round 1 and Data.docx` | Word template containing `«Placeholder»` tokens |
+| `dataset.xlsx` | Excel workbook with source data (reads from the **"2. Filtered-Complete EOIs"** sheet) |
+| `template.docx` | Word template containing `«Placeholder»` tokens |
 
 ## Placeholder Mapping
 
@@ -64,8 +64,8 @@ The Excel data file and Word template are **not** included in the repository. Yo
 
 | File to upload | Description |
 |---|---|
-| `Cleaned EOIs.xlsx` | Excel workbook with source data |
-| `Round 1 and Data.docx` | Word template containing `«Placeholder»` tokens |
+| `dataset.xlsx` | Excel workbook with source data |
+| `template.docx` | Word template containing `«Placeholder»` tokens |
 
 **In GitHub Codespaces**, you can upload files by dragging them into the Explorer sidebar, or by using the terminal:
 
@@ -112,6 +112,11 @@ Each output file is named as `[PI Name] [Nominee Name] [Nomination Type].docx`. 
 │   └── devcontainer.json   # Dev container config (Python 3.12 + LibreOffice)
 ├── .gitignore
 ├── generate_documents.py   # Main script
+├── LICENSE                 # MIT License
 ├── requirements.txt        # Python dependencies
 └── README.md
 ```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

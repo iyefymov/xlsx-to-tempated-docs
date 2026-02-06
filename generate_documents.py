@@ -27,9 +27,9 @@ from docx import Document
 
 # Configuration
 SCRIPT_DIR = Path(__file__).parent
-EXCEL_FILE = SCRIPT_DIR / "Cleaned EOIs.xlsx"
+EXCEL_FILE = SCRIPT_DIR / "dataset.xlsx"
 EXCEL_SHEET = "2. Filtered-Complete EOIs"  # The sheet with actual data
-TEMPLATE_FILE = SCRIPT_DIR / "Round 1 and Data.docx"
+TEMPLATE_FILE = SCRIPT_DIR / "template.docx"
 OUTPUT_DIR = SCRIPT_DIR / "output"
 OUTPUT_PDF_DIR = SCRIPT_DIR / "output_pdf"
 
